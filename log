@@ -1,1 +1,15 @@
 
+Thu 17 Aug 2023 04:01:57 AM UTC: 
+ exercises.c | 152 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 144 insertions(+), 8 deletions(-)
+In file included from test.c:1:
+exercises.c:83:2: error: expected identifier or ‘(’ before ‘+’ token
+   83 | }+
+      |  ^
+test.c: In function ‘test_mergeSort’:
+test.c:204:3: error: implicit declaration of function ‘mergeSortedArrays’ [-Werror=implicit-function-declaration]
+  204 |   mergeSortedArrays(arr1, size1, arr2, size2, result);
+      |   ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6824062
