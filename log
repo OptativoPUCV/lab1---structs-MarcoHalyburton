@@ -57,3 +57,24 @@ In function ‘strncpy’,
 cc1: all warnings being treated as errors
 Compilation failed
 fac6129
+Thu 17 Aug 2023 04:15:47 AM UTC: 
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/string.h:519,
+                 from exercises.c:5,
+                 from test.c:1:
+In function ‘strncpy’,
+    inlined from ‘inicializarLibro’ at exercises.c:171:5:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:95:10: error: ‘__builtin_strncpy’ specified bound 100 equals destination size [-Werror=stringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |       __glibc_objsize (__dest));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~
+In function ‘strncpy’,
+    inlined from ‘inicializarLibro’ at exercises.c:172:5:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:95:10: error: ‘__builtin_strncpy’ specified bound 50 equals destination size [-Werror=stringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |       __glibc_objsize (__dest));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+77cbb47
