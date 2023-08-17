@@ -80,7 +80,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
 
     *newSize = evenCount;
     return evenArray;
-}+
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
