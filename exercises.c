@@ -89,9 +89,9 @@ ordenados y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
-    int index1 = 0; // Índice para recorrer arr1
-    int index2 = 0; // Índice para recorrer arr2
-    int indexResult = 0; // Índice para recorrer el arreglo resultado
+    int index1 = 0;
+    int index2 = 0;
+    int indexResult = 0;
 
     while (index1 < size1 && index2 < size2) {
         if (arr1[index1] < arr2[index2]) {
@@ -104,14 +104,12 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
         indexResult++;
     }
 
-    // Copiar los elementos restantes de arr1, si los hay
     while (index1 < size1) {
         result[indexResult] = arr1[index1];
         index1++;
         indexResult++;
     }
 
-    // Copiar los elementos restantes de arr2, si los hay
     while (index2 < size2) {
         result[indexResult] = arr2[index2];
         index2++;
